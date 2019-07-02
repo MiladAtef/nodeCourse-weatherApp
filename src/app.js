@@ -4,7 +4,7 @@ const forecast = require('./utils/forecast');
 const express = require('express');
 const hbs = require('hbs');
 
-const port = process.env.PORT || 300;
+const port = process.env.PORT || 3000;
 const app = express();
 
 //define paths for express config
