@@ -4,6 +4,7 @@ const forecast = require('./utils/forecast');
 const express = require('express');
 const hbs = require('hbs');
 
+const port = process.env.PORT || 300;
 const app = express();
 
 //define paths for express config
@@ -89,6 +90,6 @@ app.get('*', (req, res) => {
 });
 
 //set up the server port in the browser
-app.listen(3000, () => {
-	console.log('App is running on port 3000');
+app.listen(port, () => {
+	console.log(`App is running on port ${port}`);
 });
